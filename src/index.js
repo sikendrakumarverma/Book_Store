@@ -22,7 +22,7 @@ mongoose.connect(MONGOURI, {
     .then(() => console.log("MongoDb is connected"))
     .catch(err => console.log(err))
 
-app.use('/', route);
+app.use('/api', route);
 
 
 
