@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { useNavigate} from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { SERVER_URI } from "../../config/keys";
 
 import axios from "axios";
 import { useState } from "react";
@@ -17,7 +18,7 @@ function AllBooks() {
   const [searchData, setSearchData] = useState("");
   
   useEffect(() => {
-    axios.get("http://localhost:8080/books").then((response) => {
+    axios.get(`${SERVER_URI}/getAllBooks`).then((response) => {
       //console.log(response.data.data)
       setUsers(response.data.data);
     });

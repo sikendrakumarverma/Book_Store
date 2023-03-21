@@ -21,7 +21,7 @@ function Add() {
   const [price, setPrice] = useState("")
   const [releasedAt, setReleasedAt] = useState("")
 
-  let CreateBookUrl = `${SERVER_URI}/books`
+  let CreateBookUrl = `${SERVER_URI}/createBook`
 
   function signUp() {
 

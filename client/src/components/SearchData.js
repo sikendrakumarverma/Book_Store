@@ -24,7 +24,7 @@ console.log(bookData)
 
 
     function getBooksData() {
-        axios.get(`${SERVER_URI}/books?name=${bookData}`, {
+        axios.get(`${SERVER_URI}/getAllBooks?name=${bookData}`, {
             headers: {
                 "x-api-key": localStorage.getItem("token")
             }

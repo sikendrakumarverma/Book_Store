@@ -14,9 +14,9 @@ router.post("/login", login)
 
 //-----------Book Api's----------//
 // router.post("/books",authenticate, singleUpload, createBooks)
-router.post("/books",authenticate, createBooks)
+router.post("/createBook",authenticate, createBooks)
 
-router.get("/books", getBooks)
+router.get("/getAllBooks", getBooks)
 
 //------------review Api's----------//
 router.post("/createOrder",  createOrder);
